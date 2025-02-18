@@ -43,13 +43,13 @@
     .btn-info {
         width: 100%;
         border-radius: 20px;
-        background: #667eea;
+        background: rgb(19, 52, 198);
         border: none;
         transition: 0.3s;
     }
 
     .btn-info:hover {
-        background: #5a67d8;
+        background: rgb(9, 26, 184);
     }
     </style>
 </head>

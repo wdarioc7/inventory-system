@@ -57,19 +57,19 @@
 <body>
 
     <div class="login-page">
-        <h1>Welcome</h1>
-        <p>Sign in to start your session</p>
+        <h1>Bienvenidos</h1>
+        <p>Sign in Para iniciar sesión</p>
 
         <?php echo display_msg($msg); ?>
 
         <form method="post" action="auth_v2.php">
             <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
+                <label for="username" class="form-label">Usuario</label>
                 <input type="text" class="form-control" name="username" placeholder="Enter your username" required>
             </div>
 
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
+                <label for="password" class="form-label">Contraseña</label>
                 <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
             </div>
 

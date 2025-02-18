@@ -3,25 +3,81 @@
   require_once('includes/load.php');
   if($session->isUserLoggedIn(true)) { redirect('home.php', false);}
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="login-page">
-    <div class="text-center">
-       <h1>Welcome</h1>
-       <p>Sign in to start your session</p>
-     </div>
-     <?php echo display_msg($msg); ?>
-      <form method="post" action="auth_v2.php" class="clearfix">
-        <div class="form-group">
-              <label for="username" class="control-label">Username</label>
-              <input type="name" class="form-control" name="username" placeholder="Username">
-        </div>
-        <div class="form-group">
-            <label for="Password" class="control-label">Password</label>
-            <input type="password" name= "password" class="form-control" placeholder="password">
-        </div>
-        <div class="form-group">
-                <button type="submit" class="btn btn-info  pull-right">Login</button>
-        </div>
-    </form>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-page {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+    }
+
+    .login-page h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 20px;
+    }
+
+    .btn-info {
+        width: 100%;
+        border-radius: 20px;
+        background: #667eea;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .btn-info:hover {
+        background: #5a67d8;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-page">
+        <h1>Welcome</h1>
+        <p>Sign in to start your session</p>
+
+        <?php echo display_msg($msg); ?>
+
+        <form method="post" action="auth_v2.php">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn btn-info">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
 <?php include_once('layouts/header.php'); ?>

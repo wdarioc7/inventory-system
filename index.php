@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
     body {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, rgb(11, 44, 190), rgb(46, 3, 88));
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -44,13 +44,13 @@
     .btn-info {
         width: 100%;
         border-radius: 20px;
-        background: rgb(19, 52, 198);
+        background: rgb(3, 19, 91);
         border: none;
         transition: 0.3s;
     }
 
     .btn-info:hover {
-        background: rgb(9, 26, 184);
+        background: rgb(5, 12, 69);
     }
     </style>
 </head>

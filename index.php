@@ -44,13 +44,13 @@
     .btn-info {
         width: 100%;
         border-radius: 20px;
-        background: rgb(3, 19, 91);
+        background: rgb(97, 107, 155);
         border: none;
         transition: 0.3s;
     }
 
     .btn-info:hover {
-        background: rgb(5, 12, 69);
+        background: rgb(134, 137, 164);
     }
     </style>
 </head>

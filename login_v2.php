@@ -65,12 +65,13 @@
         <form method="post" action="auth_v2.php">
             <div class="mb-3">
                 <label for="username" class="form-label">Usuario</label>
-                <input type="text" class="form-control" name="username" placeholder="Enter your username" required>
+                <input type="text" class="form-control" name="username" placeholder="Ingrese su usuario" required>
             </div>
 
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+                <input type="password" name="password" class="form-control" placeholder="Ingrese su Contraseña"
+                    required>
             </div>
 
             <button type="submit" class="btn btn-info">Login</button>

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
     body {
-        background: linear-gradient(135deg, rgb(11, 44, 190), rgb(46, 3, 88));
+        background: linear-gradient(135deg, rgb(207, 12, 12), rgb(166, 12, 37));
         height: 100vh;
         display: flex;
         justify-content: center;
